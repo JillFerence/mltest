@@ -4,7 +4,7 @@ from google.cloud import storage
 import pandas as pd
 import io
 
-from main import run_ml_pipeline
+from ml_pipeline import run_ml_pipeline
 
 def read_csv_from_gcs(bucket_name, file_name):
     client = storage.Client()
